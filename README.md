@@ -3,7 +3,7 @@
   <a href="" target="_blank"></a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="" />
+  <img alt="" src="" />
 </div>
 
 <br/>
