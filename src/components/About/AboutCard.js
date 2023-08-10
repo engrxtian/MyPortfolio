@@ -10,7 +10,6 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi, I am <span className="purple">Christian Almayda </span>
             from <span className="purple"> Licab, Nueva Ecija, PH.</span>
-            <br /> I'm a graduating student in BS Civil Engineering.
             <br />
             Graduate of Full-stack Web Development in <span className="purple">KodeGo</span> bootcamp.
             <br />

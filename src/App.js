@@ -6,18 +6,25 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { DarkModeProvider } from './components/DarkMode/DarkModeContext';
+import DarkModeToggle from './components/DarkMode/DarkModeToggle';
+import { createGlobalStyle } from 'styled-components';
 
-function App() {
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${(props) => (props.isDarkMode ? '#222' : '#fff')};
+    color: ${(props) => (props.isDarkMode ? '#fff' : '#333')};
+  }
+`;
+
+
+
+const App = () => {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
@@ -29,22 +36,27 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <DarkModeProvider>
+      <Router>
+        <Preloader load={load} />
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
+          <Navbar />
+          <ScrollToTop />
+          <Routes>
+          
+            <Route path="/" element={<Home />} />
+            <Route path="/project" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            
+          </Routes>
+          {/* <GlobalStyle />
+          <DarkModeToggle /> */}
+          <Footer />
+        </div>
+      </Router>
+    </DarkModeProvider>
   );
-}
+};
 
 export default App;
