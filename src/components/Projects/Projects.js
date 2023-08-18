@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import angelina from "../../Assets/Projects/mp1front.png";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import publicA from "../../Assets/Projects/mp2front.png";
+import licab from "../../Assets/Projects/LicabFront.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import capStone from "../../Assets/Projects/capstoneFront.png";
 
 function Projects() {
   return (
@@ -23,49 +23,49 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={angelina}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="Angelina's Farm Resort"
+              description="Discover a Convenient and Trustworthy Resort Information Website for Seamless Contact. Your Go-To Source for Reliable Resort Connections. This page build with HTML, CSS and Bootstrap."
               ghLink=""
-              demoLink=""
+              demoLink="https://empi1.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={publicA}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Public Registry of Sex Offender"
+              description="Empowering Safety: Your Local Sex Offender Public Registry. Access Verified Information to Safeguard Your Community. This page build with HTML, CSS, Bootstrap and Javascript."
               ghLink=""
-              demoLink=""
+              demoLink="https://empi2.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={licab}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Licab LGU"
+              description="Explore Licab LGU: Your Official Gateway to Licab Local Government. Your One-Stop Destination for Community Services and Information. This page build with HTML, CSS, Bootstrap and Javascript."
               ghLink=""
-              demoLink=""              
+              demoLink="https://licab-lgu-xtian-engrxtian.vercel.app/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={capStone}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="RizJourney"
+              description="Embark on RizJourney: Your Definitive Tribute to Jose Rizal. Uncover the Life, Works, and Legacy of the National Hero through Engaging Articles, Multimedia, and Historical Insights."
               ghLink=""
-              demoLink=""
+              demoLink="https://capstone-project-mocha-one.vercel.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
@@ -86,7 +86,7 @@ function Projects() {
               ghLink=""
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
