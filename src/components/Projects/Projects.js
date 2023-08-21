@@ -6,7 +6,7 @@ import angelina from "../../Assets/Projects/mp1front.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import publicA from "../../Assets/Projects/mp2front.png";
 import licab from "../../Assets/Projects/LicabFront.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import gym from "../../Assets/Projects/wordpress.png";
 import capStone from "../../Assets/Projects/capstoneFront.png";
 
 function Projects() {
@@ -59,24 +59,24 @@ function Projects() {
               imgPath={capStone}
               isBlog={false}
               title="RizJourney"
-              description="Embark on RizJourney: Your Definitive Tribute to Jose Rizal. Uncover the Life, Works, and Legacy of the National Hero through Engaging Articles, Multimedia, and Historical Insights."
+              description="Embark on RizJourney: Your Definitive Tribute to Jose Rizal. Uncover the Life, Works, and Legacy of the National Hero through Engaging Articles, Multimedia, and Historical Insights. This page build with HTML, CSS, Bootstrap, Javascript, and PHP."
               ghLink=""
               demoLink="https://capstone-project-mocha-one.vercel.app/"
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={gym}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="Build ALL Day"
+              description="Embrace the journey of transformation with Build All Day, where we sculpt not only bodies but also determination, one rep at a time. This page build in wordpress."
               ghLink=""
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              demoLink="https://christianalmaydadev.wordpress.com" 
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
