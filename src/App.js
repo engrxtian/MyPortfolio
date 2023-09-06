@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => (props.isDarkMode ? '#fff' : '#333')};
   }
 `;
-
+ 
 
 
 const App = () => {

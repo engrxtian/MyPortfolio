@@ -3,11 +3,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import angelina from "../../Assets/Projects/mp1front.png";
-import emotion from "../../Assets/Projects/emotion.png";
 import publicA from "../../Assets/Projects/mp2front.png";
 import licab from "../../Assets/Projects/LicabFront.png";
 import gym from "../../Assets/Projects/wordpress.png";
 import capStone from "../../Assets/Projects/capstoneFront.png";
+import nike from "../../Assets/Projects/reactEcom.jpg";
+import nikee from "../../Assets/Projects/reactEcom2.jpg";
+
+
+
 
 function Projects() {
   return (
@@ -27,7 +31,7 @@ function Projects() {
               isBlog={false}
               title="Angelina's Farm Resort"
               description="Discover a Convenient and Trustworthy Resort Information Website for Seamless Contact. Your Go-To Source for Reliable Resort Connections. This page build with HTML, CSS and Bootstrap."
-              ghLink=""
+              // ghLink=""
               demoLink="https://empi1.vercel.app/"
             />
           </Col>
@@ -38,7 +42,7 @@ function Projects() {
               isBlog={false}
               title="Public Registry of Sex Offender"
               description="Empowering Safety: Your Local Sex Offender Public Registry. Access Verified Information to Safeguard Your Community. This page build with HTML, CSS, Bootstrap and Javascript."
-              ghLink=""
+              // ghLink=""
               demoLink="https://empi2.vercel.app/"
             />
           </Col>
@@ -49,7 +53,7 @@ function Projects() {
               isBlog={false}
               title="Licab LGU"
               description="Explore Licab LGU: Your Official Gateway to Licab Local Government. Your One-Stop Destination for Community Services and Information. This page build with HTML, CSS, Bootstrap and Javascript."
-              ghLink=""
+              // ghLink=""
               demoLink="https://licab-lgu-xtian-engrxtian.vercel.app/"              
             />
           </Col>
@@ -60,7 +64,7 @@ function Projects() {
               isBlog={false}
               title="RizJourney"
               description="Embark on RizJourney: Your Definitive Tribute to Jose Rizal. Uncover the Life, Works, and Legacy of the National Hero through Engaging Articles, Multimedia, and Historical Insights. This page build with HTML, CSS, Bootstrap, Javascript, and PHP."
-              ghLink=""
+              // ghLink=""
               demoLink="https://capstone-project-mocha-one.vercel.app/"
             />
           </Col>
@@ -71,8 +75,20 @@ function Projects() {
               isBlog={false}
               title="Build ALL Day"
               description="Embrace the journey of transformation with Build All Day, where we sculpt not only bodies but also determination, one rep at a time. This page build in wordpress."
-              ghLink=""
+              // ghLink=""
               demoLink="https://christianalmaydadev.wordpress.com" 
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nike}
+              imgPath2={nikee}
+              isBlog={false}
+              title="DIY Nike Website Project"
+              description="In-progress. . . . . Using tech stack in this page is REACT.js, Node.js, Express.js and MongoDB"
+              // ghLink=""
+              // demoLink="#" 
             />
           </Col>
 

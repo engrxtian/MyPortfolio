@@ -36,7 +36,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
+          aria-controls="responsive-navbar-var"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
