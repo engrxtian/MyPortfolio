@@ -86,9 +86,9 @@ function Projects() {
               imgPath2={nikee}
               isBlog={false}
               title="DIY Nike Website Project"
-              description="In-progress. . . . . Using tech stack in this page is REACT.js, Node.js, Express.js and MongoDB"
+              description="Project in-progress. . . . . Using tech stack in this page is REACT.js, Node.js, Express.js and MongoDB"
               // ghLink=""
-              // demoLink="#" 
+              demoLink="https://diy-project-nike-store.vercel.app/" 
             />
           </Col>
 
