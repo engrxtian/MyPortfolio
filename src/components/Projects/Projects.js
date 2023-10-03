@@ -30,7 +30,7 @@ function Projects() {
               imgPath={angelina}
               isBlog={false}
               title="Angelina's Farm Resort"
-              description="Discover a Convenient and Trustworthy Resort Information Website for Seamless Contact. Your Go-To Source for Reliable Resort Connections. This page build with HTML, CSS and Bootstrap."
+              description="Discover a Convenient and Trustworthy Resort Information Website for Seamless Contact. Your Go-To Source for Reliable Resort Connections. This page build with HTML, CSS and Bootstrap, JS."
               // ghLink=""
               demoLink="https://angelinasresort.vercel.app/"
             />
