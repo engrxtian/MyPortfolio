@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import angelina from "../../Assets/Projects/mp1front.png";
+import angelina from "../../Assets/Projects/angelina.jpg";
 import publicA from "../../Assets/Projects/mp2front.png";
 import licab from "../../Assets/Projects/LicabFront.png";
 import gym from "../../Assets/Projects/wordpress.png";
@@ -32,7 +32,7 @@ function Projects() {
               title="Angelina's Farm Resort"
               description="Discover a Convenient and Trustworthy Resort Information Website for Seamless Contact. Your Go-To Source for Reliable Resort Connections. This page build with HTML, CSS and Bootstrap."
               // ghLink=""
-              demoLink="https://empi1.vercel.app/"
+              demoLink="https://angelinasresort.vercel.app/"
             />
           </Col>
 
